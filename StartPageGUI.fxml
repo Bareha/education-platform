@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller1">
+   <children>
+      <AnchorPane prefHeight="740.0" prefWidth="900.0">
+         <children>
+            <ImageView fitHeight="610.0" fitWidth="617.0" layoutX="145.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Desktop/MindForge_Logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="getStartedButton" layoutX="411.0" layoutY="573.0" mnemonicParsing="false" onAction="#getStarted" prefHeight="38.0" prefWidth="162.0" text="Get Started " />
+            <CheckBox fx:id="captcha" layoutX="417.0" layoutY="516.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0" text="I'm not a robot">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="captchaWarning" alignment="CENTER" layoutX="357.0" layoutY="630.0" prefHeight="17.0" prefWidth="270.0" text=" " textFill="RED" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

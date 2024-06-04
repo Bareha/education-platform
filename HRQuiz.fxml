@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller4">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="740.0" prefWidth="900.0">
+         <children>
+            <MenuBar fx:id="menuBar" prefHeight="26.0" prefWidth="1151.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Home">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#switchToHome" text="Go to Home" />
+                           </items></Menu>
+                      <Menu mnemonicParsing="false" text="Categories">
+                        <items>
+                          <MenuItem mnemonicParsing="false" onAction="#switchToDM" text="Digital Marketing" />
+                              <MenuItem mnemonicParsing="false" onAction="#switchToBR" text="Branding" />
+                              <MenuItem mnemonicParsing="false" onAction="#switchToWD" text="Web Devlopment" />
+                              <MenuItem mnemonicParsing="false" onAction="#switchToSS" text="Sales" />
+                              <MenuItem mnemonicParsing="false" onAction="#switchToHR" text="Human Resources" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Logout">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#switchToLogin" text="Logout" />
+                           </items></Menu>
+                    </menus>
+                  </MenuBar>
+            <Label alignment="CENTER" layoutY="44.0" prefHeight="17.0" prefWidth="900.0" text="Quiz">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="80.0" prefHeight="17.0" prefWidth="779.0" text="Q1. What is the primary function of Human Resources (HR) in an organization?">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="44.0" layoutY="108.0" mnemonicParsing="false" onAction="#incorrect" text="Managing finances">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="44.0" layoutY="125.0" mnemonicParsing="false" onAction="#correct" text="Managing human capital" toggleGroup="$group1" />
+            <RadioButton layoutX="44.0" layoutY="142.0" mnemonicParsing="false" onAction="#incorrect" text="Managing marketing campaigns" toggleGroup="$group1" />
+            <RadioButton layoutX="44.0" layoutY="159.0" mnemonicParsing="false" onAction="#incorrect" text="Managing supply chain" toggleGroup="$group1" />
+            <Label layoutX="44.0" layoutY="195.0" prefHeight="17.0" prefWidth="779.0" text="Q2. Which of the following is a key responsibility of HR in the recruitment process?">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="44.0" layoutY="224.0" mnemonicParsing="false" onAction="#incorrect" text="Managing company finances">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group2" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="44.0" layoutY="241.0" mnemonicParsing="false" onAction="#incorrect" text="Designing product prototypes" toggleGroup="$group2" />
+            <RadioButton layoutX="44.0" layoutY="258.0" mnemonicParsing="false" onAction="#correct" text="Identifying and attracting qualified candidates" toggleGroup="$group2" />
+            <RadioButton layoutX="44.0" layoutY="275.0" mnemonicParsing="false" onAction="#incorrect" text="Managing customer relations" toggleGroup="$group2" />
+            <Label layoutX="44.0" layoutY="312.0" prefHeight="17.0" prefWidth="779.0" text="Q3. What is the purpose of an employee performance appraisal?">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="44.0" layoutY="340.0" mnemonicParsing="false" onAction="#incorrect" text="Evaluating customer satisfaction">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group3" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="44.0" layoutY="357.0" mnemonicParsing="false" onAction="#correct" text="Assessing employee job performance" toggleGroup="$group3" />
+            <RadioButton layoutX="44.0" layoutY="374.0" mnemonicParsing="false" onAction="#incorrect" text="Analyzing market trends" toggleGroup="$group3" />
+            <RadioButton layoutX="44.0" layoutY="391.0" mnemonicParsing="false" onAction="#incorrect" text="Evaluating competitor performance" toggleGroup="$group3" />
+            <Label layoutX="44.0" layoutY="422.0" prefHeight="17.0" prefWidth="779.0" text="Q4. What is the primary goal of employee training and development?">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="45.0" layoutY="452.0" mnemonicParsing="false" onAction="#incorrect" text="Reducing employee turnover">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group4" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="45.0" layoutY="469.0" mnemonicParsing="false" onAction="#incorrect" text="Increasing customer satisfaction" toggleGroup="$group4" />
+            <RadioButton layoutX="45.0" layoutY="486.0" mnemonicParsing="false" onAction="#correct" text="Enhancing employee skills and knowledge" toggleGroup="$group4" />
+            <RadioButton layoutX="45.0" layoutY="503.0" mnemonicParsing="false" onAction="#incorrect" text="Expanding product offerings" toggleGroup="$group4" />
+            <Label layoutX="44.0" layoutY="541.0" prefHeight="17.0" prefWidth="779.0" text="Q5. What is the purpose of an employee handbook?">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="45.0" layoutY="570.0" mnemonicParsing="false" onAction="#incorrect" text="Setting financial goals for employees">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group5" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="45.0" layoutY="587.0" mnemonicParsing="false" onAction="#correct" text="Outlining company policies and procedures" toggleGroup="$group5" />
+            <RadioButton layoutX="45.0" layoutY="604.0" mnemonicParsing="false" onAction="#incorrect" text="Scheduling employee vacations" toggleGroup="$group5" />
+            <RadioButton layoutX="45.0" layoutY="621.0" mnemonicParsing="false" onAction="#incorrect" text="Conducting employee performance evaluations" toggleGroup="$group5" />
+            <Button layoutX="428.0" layoutY="647.0" mnemonicParsing="false" onAction="#done" text="Done" />
+            <Label layoutX="44.0" layoutY="678.0" text="Score:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreLabel" layoutX="107.0" layoutY="678.0" prefHeight="17.0" prefWidth="88.0" text=" ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
