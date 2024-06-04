@@ -35,3 +35,11 @@ Once we select a course to purchase, we click on the “Kickstart Learning” bu
 This page only checks if the format of the credentials entered by the user is correct. It validates the purchase if the credentials are correct.
 Once the purchase is validated, a string will be saved in a file and hence, the purchase will not be required to be made again, as the file has to be read first in order to check for any purchase redundancies.
 Once the payment is successful, it will take back to the course page where you click on the buttonagain, but this time the disabled buttons will be enabled and you can access the course’s different features like video lectures, quizzes and assignments.
+<br>
+<hr>
+<b>NOTE:</b> Three videos of lectures belong to all courses.
+Branding- BRLecture1.mp4, BRLecture2.mp4, BRLecture3.mp4
+Digital Marketing- DMLecture1.mp4, DMLecture2.mp4, DMLecture3.mp4
+Human Resource- HRLecture1.mp4, HRLecture2.mp4, HRLecture3.mp4
+Sales- SalesLecture1.mp4, SalesLecture2.mp4, SalesLecture3.mp4
+Web Development- WDLecture1.mp4, WDLecture2.mp4, WDLecture3.mp4
